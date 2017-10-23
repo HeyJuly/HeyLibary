@@ -44,7 +44,7 @@
         android:background="@drawable/ic_scan_mask">
 
         <ImageView
-            android:id="@+id/top_mask"
+            android:id="@+id/top_light"
             android:layout_width="@dimen/scan_top_img"
             android:layout_height="@dimen/scan_top_img"
             android:layout_centerInParent="true"
@@ -75,6 +75,16 @@
     </RelativeLayout>
 
     <ImageView
+        android:id="@+id/bottom_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/capture_crop_layout"
+        android:background="@drawable/ic_scan_mask"
+        android:contentDescription="@string/app_name"/>
+
+
+    <ImageView
         android:id="@+id/left_mask"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -100,15 +110,6 @@
         android:background="@drawable/ic_scan_mask"
         android:contentDescription="@string/app_name"/>
 
-
-    <ImageView
-        android:id="@+id/bottom_mask"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@id/capture_crop_layout"
-        android:background="@drawable/ic_scan_mask"
-        android:contentDescription="@string/app_name"/>
 
 
     <TextView
